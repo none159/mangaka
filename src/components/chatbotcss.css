@@ -1,0 +1,208 @@
+.signin {
+    position: relative;
+    top: 300px;
+    display: grid;
+    place-content: center;
+    gap: 40px;
+
+}
+
+.signin h2 {
+    color: rgb(234, 143, 24);
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+.signin button {
+    width: fit-content;
+    padding: 15px 90px 15px 90px;
+    cursor: pointer;
+    font-size: larger;
+    color: rgb(234, 143, 24);
+    border-radius: .5em;
+    border: none;
+    transition: 250ms ease-in-out;
+}
+
+.signin button:hover {
+    color: white;
+    background-color: rgb(234, 143, 24);
+}
+
+.roombox {
+    position: relative;
+    top: 300px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    gap: 70px;
+    margin: 100px;
+    transform: scale(1.12);
+}
+
+.roombox h2 {
+    color: rgb(234, 143, 24);
+    font-weight: 300;
+    font-family: sans-serif;
+}
+
+.roominput {
+    display: flex;
+    margin: 50px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.roominput label {
+    font-size: larger;
+    color: rgb(234, 143, 24);
+}
+
+.roominput input {
+    height: 30px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 15px black;
+    border-radius: .3em;
+    width: 50vh;
+    transition: 350ms ease-in-out;
+}
+
+.roominput input:focus {
+    width: 60vh;
+    border: 1px solid rgb(234, 143, 24);
+}
+
+.roominput button {
+    cursor: pointer;
+    padding: 10px;
+    color: rgb(234, 143, 24);
+    border: none;
+    border-radius: .3em;
+    transition: 250ms ease-in-out;
+}
+
+.roominput button:hover {
+    background-color: rgb(234, 143, 24);
+    color: white;
+}
+
+.chatsection {
+    display: grid;
+    position: relative;
+    top: 100px;
+}
+
+.chatsection h2:nth-child(1) {
+    margin: 50px auto;
+    color: rgb(234, 143, 24);
+    font-weight: 300;
+    width: fit-content;
+    border: 1px solid rgb(234, 143, 24);
+    padding: 10px 30px 10px 30px;
+    box-shadow: 0 0 10px rgb(234, 143, 24);
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.messagesbox {
+    margin: 0 auto;
+    background-color: #222222;
+    padding: 50px 25px 50px 25px;
+    box-shadow: 0 0 10px rgb(234, 143, 24);
+    width: 1300px;
+}
+
+.messagesbox h2 {
+    color: rgb(234, 143, 24);
+    font-weight: 300;
+}
+
+.messages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+
+.messages h3 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.messages h4 {
+    font-weight: 300;
+    font-family: sans-serif;
+    color: white;
+}
+
+.sendbox {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.sendbox form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    margin: 50px;
+}
+
+.sendbox form input {
+    width: 100vh;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    outline: none;
+    border: none;
+    border-radius: .5em;
+    box-shadow: 0 0 15px black;
+
+}
+
+.sendbox button {
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    padding: 15px;
+    box-shadow: 0 0 10px black;
+    border: none;
+    border-radius: .3em;
+    transition: 350ms ease-in-out;
+}
+
+.sendbox button:hover {
+    background-color: rgb(234, 143, 24);
+    color: white;
+}
+
+.signout button {
+    position: relative;
+    top: 350px;
+    padding: 10px;
+    cursor: pointer;
+    left: 45%;
+    border-radius: .3em;
+    border: none;
+    transition: 350ms ease-in-out;
+}
+
+.signout button:hover {
+    background-color: rgb(105, 30, 30);
+    color: white;
+}
+
+.icon {
+    height: 40px;
+    width: 40px;
+}
+
+.button {
+    background: transparent;
+    outline: none;
+    border: none;
+}

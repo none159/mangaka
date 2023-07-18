@@ -1,0 +1,507 @@
+::selection {
+  background-color: rgb(248, 209, 159);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #222222;
+}
+
+nav {
+  background-color: #222222;
+  padding: 10px;
+  box-shadow: 0 0 15px rgb(234, 143, 24);
+  border-bottom-left-radius: 60px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  width: 95%;
+}
+
+.nav-container h2 {
+  color: white;
+
+}
+
+.nav-container .logo h2 {
+  padding-left: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+  cursor: pointer;
+  transition: 250ms ease-in-out;
+}
+
+.nav-container .logo h2:hover {
+  color: rgb(248, 221, 187);
+}
+
+.nav-container .searchbox {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-container .searchbox input {
+  width: 350px;
+  background-color: antiquewhite;
+  color: #222222;
+  text-align: center;
+  font-size: large;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 0.3em;
+  box-shadow: 0 0 10px black;
+  outline: none;
+  border: none;
+  height: 40px;
+  transition: 350ms all;
+}
+
+.nav-container .searchbox button {
+  border-radius: 0.3em;
+  background-color: antiquewhite;
+  color: #222222;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0 0 5px rgb(248, 209, 159);
+  width: 80px;
+  height: 40px;
+  transition: 350ms ease-in-out;
+}
+
+.nav-container .searchbox button:hover {
+  color: antiquewhite;
+  background-color: #222222;
+  box-shadow: 0 0 10px black;
+}
+
+.nav-container input:focus {
+  width: 400px;
+  box-shadow: 0 5px 20px black;
+  box-shadow: 0.5em;
+}
+
+.nav-container .navigate {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.nav-container .navigate h2 {
+  font-weight: 300;
+  cursor: pointer;
+  font-family: sans-serif;
+  border: none;
+  transition: 350ms ease-in-out;
+}
+
+.nav-container .navigate h2:hover {
+  color: rgba(255, 255, 255, 0.422);
+}
+
+.mangainfo {
+  display: flex;
+  position: relative;
+  top: 300px;
+  z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  gap: 100px;
+  padding: 10px;
+  margin: 7px;
+}
+
+.mangainfo .mangapic img {
+  width: 300px;
+  height: 300px;
+  border: 1px solid rgb(248, 209, 159);
+  box-shadow: 0 0 15px rgb(248, 209, 159);
+  border-radius: .3em;
+}
+
+.mangainfo .mangadetails {
+  display: grid;
+  gap: 30px;
+  width: fit-content;
+  text-align: center;
+  align-items: center;
+}
+
+.mangainfo .mangadetails h2 {
+  margin: 0 auto;
+  font-size: xx-large;
+  margin-bottom: 70px;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #222222;
+  box-shadow: 0 0 10px black;
+  color: rgb(234, 143, 24);
+  cursor: default;
+  width: fit-content;
+  padding: 10px;
+}
+
+.mangainfo .mangadetails h3 {
+  margin-bottom: 50px;
+  color: #222222;
+  background-color: antiquewhite;
+  padding: 20px 10px 20px 10px;
+  box-shadow: 0 0 15px black;
+  border-radius: 0.1em;
+}
+
+.mangainfo .mangadetails .genres {
+  background-color: #222222;
+  color: antiquewhite;
+  font-family: sans-serif;
+  width: fit-content;
+  margin-bottom: -5px;
+}
+
+.mangainfo .mangadetails h4 {
+  color: rgb(234, 143, 24);
+  margin: -10px;
+  width: fit-content;
+  padding: 10px;
+}
+
+.mangainfo .mangadetails a {
+  transition: 175ms ease-in-out;
+}
+
+.mangainfo .mangadetails a:hover {
+  color: rgb(248, 209, 159);
+}
+
+.mangadata {
+  position: relative;
+  top: 250px;
+  text-align: center;
+  display: grid;
+  gap: 50px;
+}
+
+.mangadata .title-recommendation {
+  background-color: #222222;
+  color: rgb(248, 209, 159);
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+  box-shadow: 0 0 10px rgb(248, 209, 159);
+}
+
+.mangadata .title-recommendation span {
+  color: rgb(234, 143, 24);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.mangadata .mangadatalist {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 20px 20px 20px 30px;
+  transform: scale(0.8);
+  cursor: pointer;
+  box-shadow: 0 0 5px black;
+  justify-content: space-between;
+  width: 96.5%;
+  transition: 350ms ease-in-out;
+}
+
+.mangadata .mangadatalist:hover {
+  transform: scale(1);
+  background-color: #222222;
+  box-shadow: 0 0 10px black;
+}
+
+.mangadata .mangadatalist h3 {
+  margin: 30px;
+  padding: 10px;
+  color: white;
+}
+
+.mangadata .mangadatalist h2 {
+  background-color: #222222;
+  font-size: xx-large;
+  color: antiquewhite;
+  color: rgb(234, 143, 24);
+  padding: 10px;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 0 10px black;
+  margin: 30px;
+}
+
+.mangadata .mangadatalist img {
+  width: fit-content;
+  box-shadow: 0 0 10px black;
+  border: 1px solid rgb(234, 143, 24);
+}
+
+.trending-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  top: 300px;
+}
+
+.trending-container h1 {
+
+  background-color: rgb(234, 143, 24);
+  font-weight: 300;
+  color: #222222;
+  border-bottom-right-radius: .3em;
+  border-top-right-radius: .3em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 90%;
+  font-size: xx-large;
+  box-shadow: 0 5px 20px black;
+  padding: 10px 10px 10px 30px;
+}
+
+.trending-container .trending {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 50px;
+  padding: 10px;
+  transform: scale(0.9);
+  cursor: pointer;
+  width: 95%;
+  transition: 350ms ease-in-out;
+
+}
+
+.trending-container .trending:hover {
+  background-color: #222222;
+  transform: scale(1);
+  box-shadow: 0 5px 20px black;
+
+}
+
+.trending-container .trending h3 {
+  color: antiquewhite;
+  font-weight: 300;
+  font-size: xx-large;
+  box-shadow: 0 0 10px black;
+  padding: 10px;
+  background-color: #222222;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+.trending-container .trending img {
+  border: 1px solid rgb(234, 143, 24);
+  border-radius: .3em;
+  box-shadow: 0 0 10px black;
+
+}
+
+.hero-container .slider {
+  display: flex;
+  border-radius: .3em;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(250, 235, 215);
+  box-shadow: 0 0 10px rgb(248, 209, 159);
+  border: 1px solid rgb(248, 209, 159);
+  padding: 50px 150px 50px 150px;
+  margin: 100px;
+  top: 50px;
+}
+
+.hero-container .slider img {
+  box-shadow: 0 0 15px black;
+  border: 1px solid #222222;
+
+}
+
+.hero-container .slider .left-img img {
+  width: 200px;
+  opacity: 50%;
+  height: 250px;
+  transition: 350ms ease-in-out alternate;
+}
+
+.hero-container .slider .mid-img img {
+  width: 300;
+  height: 350px;
+  cursor: pointer;
+  border: 3px solid rgb(248, 209, 159);
+  box-shadow: 0 0 15px rgb(234, 143, 24);
+  transition: 350ms ease-in-out;
+}
+
+.hero-container .slider .mid-img img:hover {
+  transform: scale(1.01);
+}
+
+.hero-container .slider .right-img img {
+  width: 200px;
+  opacity: 50%;
+  height: 250px;
+  transition: 350ms ease-in-out alternate;
+}
+
+.hero-container .categoriesbox {
+  position: relative;
+  top: 225px;
+  display: grid;
+  gap: 50px;
+
+}
+
+.hero-container .categoriesbox h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: xx-large;
+  color: rgb(234, 143, 24);
+  background-color: #222222;
+  box-shadow: 0 0 10px black;
+  padding: 5px;
+  width: 1000px;
+  border-bottom-right-radius: .5em;
+  border-top-right-radius: .5em;
+}
+
+.hero-container .categoriesbox .categories {
+  display: grid;
+  overflow: hidden;
+  grid-template-columns: auto auto auto auto auto;
+  align-items: center;
+  text-align: center;
+  row-gap: 20px;
+}
+
+.hero-container .categoriesbox .categories h3 {
+  font-weight: 300;
+  color: antiquewhite;
+  background-color: #222222;
+  cursor: pointer;
+  box-shadow: 0 0 5px black;
+  transition: 250ms ease-in-out;
+}
+
+.hero-container .categoriesbox .categories h3:hover {
+  transform: scale(1.1);
+  color: rgb(248, 209, 159);
+}
+
+.hero-container .recommendations {
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 100px;
+  position: relative;
+  top: 350px;
+}
+
+.hero-container .recommendations h2 {
+  color: antiquewhite;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-container .recommendations h3 {
+  color: rgb(234, 143, 24);
+  margin: 30px;
+  font-weight: 300;
+  font-family: sans-serif;
+}
+
+
+
+.hero-container .recommendations img {
+  width: 370px;
+  border: 2px solid rgb(234, 143, 24);
+  box-shadow: 0 0 30px black;
+  cursor: pointer;
+  border-radius: .2em;
+  height: 300px;
+  transition: 350ms ease-in-out;
+}
+
+.hero-container .recommendations img:hover {
+  transform: scaleX(1.1);
+  border-radius: .5em;
+}
+
+footer {
+  position: relative;
+  top: 100vh;
+  background-color: #222222;
+  box-shadow: 0 0 15px rgb(234, 143, 24);
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  width: 85%;
+  padding: 30px;
+}
+
+.footer-container .footer-links {
+  display: grid;
+  gap: 35px;
+}
+
+.footer-container .logo {
+  width: fit-content;
+}
+
+.footer-container .logo img {
+
+  width: 240px;
+  height: 240px;
+  border-radius: .3em;
+  opacity: 80%;
+  border: 1px solid rgb(234, 143, 24);
+  box-shadow: 0 0 15px black;
+  transition: 350ms ease-in-out;
+}
+
+.footer-container .logo img:hover {
+  transform: scaleX(1.5) scaleY(1.05);
+  box-shadow: 0 5px 30px black;
+}
+
+.footer-container .footer-links h2 {
+  color: antiquewhite;
+  font-weight: 300;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.footer-container .footer-links h2:hover {
+  color: rgb(234, 143, 24);
+  text-decoration: underline rgb(234, 143, 24);
+}
+
+footer .copyright {
+  position: relative;
+  color: antiquewhite;
+  font-weight: 300;
+  font-family: Arial, Helvetica, sans-serif;
+  left: 40%;
+  width: fit-content;
+  border: 1px solid rgb(234, 143, 24);
+  box-shadow: 0 0 10px rgb(248, 209, 159);
+  padding: 5px;
+}
