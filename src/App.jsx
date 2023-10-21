@@ -11,9 +11,9 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="./trending" element={<Trending />} />
-        <Route path="./groupchat" element={<Chatpage />} />
+        <Route path="/mangaka" element={<Home />} />
+        <Route path="/trending" element={<Trending />} />
+        <Route path="/groupchat" element={<Chatpage />} />
 
       </Routes>
     </BrowserRouter>
