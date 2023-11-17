@@ -6,7 +6,7 @@ const Footer = () => {
         <footer>
             <div className="footer-container">
                 <div className="footer-links">
-                    <Link to="/" style={{ textDecoration: 'none' }} ><h2>Home</h2></Link>
+                    <Link to="/mangaka" style={{ textDecoration: 'none' }} ><h2>Home</h2></Link>
                     <Link to="/groupchat" style={{ textDecoration: 'none' }}><h2>GroupChat</h2></Link>
                     <Link to="/trending" style={{ textDecoration: 'none' }}><h2>Trending</h2></Link>
                 </div>

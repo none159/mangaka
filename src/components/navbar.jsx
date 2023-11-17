@@ -16,7 +16,7 @@ const Nav = (props) => {
                     <button onClick={updatesearch}>Search</button>
                 </div> : ''}
                 <div className='navigate'>
-                    <Link to="/" style={{ textDecoration: 'none' }} ><h2>Home</h2></Link>
+                    <Link to="/mangaka" style={{ textDecoration: 'none' }} ><h2>Home</h2></Link>
                     <Link to="/trending" style={{ textDecoration: 'none' }}><h2>Trending</h2></Link>
                     <Link to="/groupchat" style={{ textDecoration: 'none' }}><h2>GroupChat</h2></Link>
                 </div>
